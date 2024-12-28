@@ -18,4 +18,4 @@ image = np.expand_dims(image, 0)
 model_path = "D:\\Imagini\\Model\\old_photos_model.h5"
 model = keras.models.load_model(model_path)
 prediction = model.predict(image)
-print(int(prediction[0]))
+print(prediction.round())
